@@ -5,81 +5,48 @@ import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className=" bg-black text-white  mt-8 md:mt-0">
-      <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
-        <div className=" w-full md:w-1/4">
-          <h1 className=" font-semibold text-xl pb-4">FoodieWeb</h1>
-          <p className=" text-sm">
-            Indulge in a symphony of flavors, where each plate is a canvas for
-            culinary excellence.
-          </p>
-        </div>
+    <div className="bg-black text-white  mt-8 md:mt-0">
+      <div className="flex flex-col md:flex-row justify-around justify-items-start p-8 md:px-32 px-5">
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
-          <nav className=" flex flex-col gap-2">
+          <h1 className="text-brightColor font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
+          <nav className="text-footerColor flex flex-col gap-2">
             <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+                className=" hover:text-brightColor transition-all cursor-pointer"
+                href="/"
             >
-              Dishes
+              A108 Adam StreetNY535022,USA
             </a>
             <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+                className=" hover:text-brightColor transition-all cursor-pointer"
+                href="/"
             >
-              About
+              RestourantWeb@gmail.com
             </a>
             <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+                className=" hover:text-brightColor transition-all cursor-pointer"
+                href="/"
             >
-              Menu
-            </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Reviews
+              +012 345 67890
             </a>
           </nav>
         </div>
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Menu</h1>
-          <nav className=" flex flex-col gap-2">
+          <h1 className="text-brightColor font-medium text-xl pb-4 pt-5 md:pt-0">Opening</h1>
+          <nav className="text-footerColor flex flex-col gap-2">
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              Our Dishes
+              Monday - Saturday<br/>
+              09AM - 09PM
+
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              Premium Menu
-            </a>
-          </nav>
-        </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
-          <nav className=" flex flex-col gap-2">
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              FoodieWeb@email.com
-            </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              +64 958 248 966
-            </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Social media
+              Sunday<br/>
+              10AM - 08PM
             </a>
           </nav>
         </div>

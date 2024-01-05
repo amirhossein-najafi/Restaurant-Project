@@ -6,8 +6,6 @@ import Button from "../layouts/Button";
 import {AiOutlineMenuUnfold} from "react-icons/ai";
 import {AiOutlineClose} from "react-icons/ai";
 
-"/assets/img/icons8-sign-in-48.png";
-
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
 
@@ -20,10 +18,10 @@ const Navbar = () => {
     };
 
     return (
-        <div className="fixed w-full bg-black">
+        <div className="fixed w-screen  bg-black">
             <div>
                 <div
-                    className=" bg-black flex flex-row justify-between p-5 md:px-32 px-5  shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    className=" bg-black flex flex-row justify-between p-5 md:px-20  shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                     <div className=" flex flex-row items-center cursor-pointer">
             <span>
               <BiRestaurant size={32} color="#10D352"/>
@@ -64,8 +62,7 @@ const Navbar = () => {
                         </Link>
 
 
-                        <button>
-                            <img className="" src="/assets/img/icons8-sign-in-48.png" alt="sign in"/></button>
+                        <Button title="Login" />
                     </nav>
 
                     <div className="md:hidden flex items-center">
@@ -114,8 +111,7 @@ const Navbar = () => {
                     </Link>
 
 
-                    <button>
-                        <img  src="/assets/img/icons8-sign-in-48.png" alt="sign in"/></button>
+                    <Button title="Login" />
                 </div>
             </div>
         </div>

@@ -3,20 +3,16 @@ import Button from "../layouts/Button";
 
 const Home = () => {
   return (
-    <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/main.jpg')] bg-cover bg-no-repeat ">
-      <div className=" w-full lg:w-2/3 space-y-5">
-        <h1 className=" text-backgroundColor font-semibold text-6xl">
+    <div className=" h-screen w-screen flex flex-row items-end   lg:px-32 px-5 bg-[url('./assets/img/main.jpg')] bg-contain bg-no-repeat ">
+        <div className="flex flex-row  justify-center items-center  bg-black w-screen">
+        <h1 className=" text-backgroundColor font-semibold text-3xl ">
           Elevate Your Inner Foodie with Every Bite.
         </h1>
-        <p className=" text-backgroundColor">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis et qui,
-          maxime assumenda repellat corrupti officia dolorum delectus labore
-          deleniti?
-        </p>
         <div className=" lg:pl-44">
           <Button title="Booking table" />
         </div>
-      </div>
+       </div>
+
     </div>
   );
 };
