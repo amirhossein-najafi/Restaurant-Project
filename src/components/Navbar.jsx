@@ -64,9 +64,8 @@ const Navbar = () => {
                         </Link>
 
 
-                      <button  className=" text-left justify-around flex-row px-10 py-1 border-2  bg-brightColor border-brightColor text-blackColor  transition-all rounded-full">
-                        <img className="flex-row  w-8 h-8"  src="/assets/img/icons8-sign-in-48.png" alt="sign"/>
-                        sign in</button>
+                        <button>
+                            <img className="" src="/assets/img/icons8-sign-in-48.png" alt="sign in"/></button>
                     </nav>
 
                     <div className="md:hidden flex items-center">
@@ -115,7 +114,8 @@ const Navbar = () => {
                     </Link>
 
 
-                    <button><img src="/assets/img/icons8-sign-in-48.png" alt="sign"/></button>
+                    <button>
+                        <img  src="/assets/img/icons8-sign-in-48.png" alt="sign in"/></button>
                 </div>
             </div>
         </div>
