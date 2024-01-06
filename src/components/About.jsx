@@ -4,28 +4,46 @@ import Button from "../layouts/Button";
 
 const About = () => {
   return (
-    <div className="bg-black min-h-screen flex flex-col lg:flex-row justify-center items-center lg:px-32 px-5">
-      <img src={img} alt="img" />
-
-      <div className=" space-y-4 lg:pt-14">
-        <h1 className="text-whiteColor font-semibold text-4xl text-center md:text-start">
+    
+    <div className="bg-black min-h-screengrid flex flex-row gap-x-80 lg:px-32 px-5 py-40">
+      <div className="grid grid-cols-2 gap-x-80 gap-y-3 ">
+        <div className="w-60 h-60">
+          <img src="./assets/img/about-1.jpg" alt="img"/>
+        </div>
+        <div className="w-40 h-40 pt-10">
+          <img src="./assets/img/about-3.jpg" alt="img"/>
+        </div>
+        <div className="w-40 h-40 pt-10">
+          <img src="./assets/img/about-4.jpg" alt="img"/>
+        </div>
+        <div className="w-60 h-60">
+          <img src="./assets/img/about-2.jpg" alt="img"/>
+        </div>
+      </div>
+      <div className=" space-y-4 lg:pt-14 content-center">
+        <h1 className="text-green font-semibold text-4xl text-center md:text-start">
           Why Choose Us?
         </h1>
-        <p className="text-whiteColor">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          architecto quisquam delectus minima perferendis nulla quia nisi
-          laborum, exercitationem cum quo accusantium, impedit sed. Dicta, quo
-          molestias omnis reprehenderit quae animi? Explicabo quasi accusamus
+        <p className="text-backgroundColor">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit
+          architecto quisquam delectus minima perferendis nulla 
+          laborum, exercitationem cum quo accusantium, impedit sed
+          molestias omnis reprehenderit quae animi? Explicab
           laboriosam temporibus delectus, aut a? Quasi?
         </p>
-        <p className="text-whiteColor">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi,
-          suscipit reiciendis accusamus recusandae eum aspernatur pariatur odit
+        <p className="text-backgroundColor">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit,
+          suscipit reiciendis accusamus recusandae eum aspernatur
           veritatis facere. Magnam!
         </p>
-        <div className=" flex justify-center lg:justify-start">
-          <Button title="Learn More" />
-        </div>
+        <hr className="rotate-90 w-10 border-solid border-2 border-backgroundColor inline-block "/>
+        <p className="font-semibold text-brightColor text-3xl inline-block pr-4">
+          15
+        </p>
+        <p className="font-semibold text-green text-1xl inline-block ">
+          Years Of <br />
+          Exprience
+        </p>
       </div>
     </div>
   );
