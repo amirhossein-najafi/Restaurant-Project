@@ -10,6 +10,7 @@ import {TabPanel as BaseTabPanel} from '@mui/base/TabPanel';
 import {buttonClasses} from '@mui/base/Button';
 import {Tab as BaseTab, tabClasses} from '@mui/base/Tab';
 import Button from "../layouts/Button.jsx";
+import Navbar from "./Navbar.jsx";
 
 const Menu = () => {
     const orange = {
@@ -98,6 +99,7 @@ const Menu = () => {
     );
     return (
         <div className="bg-black min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
+
             <div>
         <span className="text-brightColor text-3xl font-semibold text-center lg:pt-8 pt-24 pb-40">
         FOOD MENU</span>

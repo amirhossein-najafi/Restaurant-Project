@@ -1,10 +1,15 @@
 import React from "react";
+import Navbar from "./Navbar.jsx";
 
 
 const About = () => {
   return (
 
     <div className="bg-black min-h-screengrid flex flex-row gap-x-80 lg:px-32 px-5 py-40">
+      <div className="fixed top-0 left-0">
+        <Navbar />
+      </div>
+
       <div className="grid grid-cols-2 gap-x-80 gap-y-3 ">
         <div className="w-60 h-60">
           <img src="./assets/img/about-1.jpg" alt="img"/>
