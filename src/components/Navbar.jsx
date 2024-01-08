@@ -1,8 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useState} from "react";
-import {Link} from "react-scroll";
+import {Link} from "react-router-dom";
 import {BiRestaurant} from "react-icons/bi";
 import Button from "../layouts/Button";
+import Login  from"./Login"
 import {AiOutlineMenuUnfold} from "react-icons/ai";
 import {AiOutlineClose} from "react-icons/ai";
 
@@ -62,7 +63,14 @@ const Navbar = () => {
                         </Link>
 
 
-                        <Button title="Login" />
+                        <Link
+                            to="login"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            className="hover:text-brightColor transition-all cursor-pointer"
+                        ><Button title="Login" />
+                        </Link>
                     </nav>
 
                     <div className="md:hidden flex items-center">
@@ -110,8 +118,17 @@ const Navbar = () => {
                         Menu
                     </Link>
 
-
+                <Link
+                    to={Login}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    className="hover:text-brightColor transition-all cursor-pointer"
+                    onClick={closeMenu}
+                >
                     <Button title="Login" />
+                </Link>
+
                 </div>
             </div>
         </div>

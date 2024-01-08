@@ -10,7 +10,9 @@ export default {
         whiteColor:"#f8e6e6",
         backgroundColor: "#b7bca9",
         lightText: "#959595",
-        footerColor:"#8A4924"
+        footerColor:"#8A4924",
+        menutext:"#C7DD8B",
+        logintext:"#393e3e"
       },
     },
   },

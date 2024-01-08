@@ -1,10 +1,9 @@
 import React from "react";
-import img from "../assets/img/about.png";
-import Button from "../layouts/Button";
+
 
 const About = () => {
   return (
-    
+
     <div className="bg-black min-h-screengrid flex flex-row gap-x-80 lg:px-32 px-5 py-40">
       <div className="grid grid-cols-2 gap-x-80 gap-y-3 ">
         <div className="w-60 h-60">
@@ -36,7 +35,7 @@ const About = () => {
           suscipit reiciendis accusamus recusandae eum aspernatur
           veritatis facere. Magnam!
         </p>
-        <hr className="rotate-90 w-10 border-solid border-2 border-backgroundColor inline-block "/>
+        <hr className="rotate-90 w-10 border-solid border-2 border-brightColor inline-block"/>
         <p className="font-semibold text-brightColor text-3xl inline-block pr-4">
           15
         </p>
@@ -46,6 +45,7 @@ const About = () => {
         </p>
       </div>
     </div>
+
   );
 };
 

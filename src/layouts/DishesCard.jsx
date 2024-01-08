@@ -1,6 +1,7 @@
 import React from "react";
 import { BsStarFill } from "react-icons/bs";
 import { BsStarHalf } from "react-icons/bs";
+import { BsStar } from "react-icons/bs";
 import Button from "../layouts/Button";
 
 const DishesCard = (props) => {
@@ -18,7 +19,11 @@ const DishesCard = (props) => {
         </div>
         <div className=" flex flex-row items-center justify-center gap-4">
           <h3 className=" font-semibold text-lg">{props.price}</h3>
-          <Button title="Buy Now" />
+          <input    type="checkbox" value=""
+                   className="border-footerColor accent-footerColor forced-colors:appearance-auto
+                   w-4 h-4 cursor-pointer bg-footerColor  rounded "/>
+
+
         </div>
       </div>
     </div>
