@@ -1,9 +1,13 @@
 import React from "react";
 import Button from "../layouts/Button";
 import Navbar from "./Navbar.jsx";
+import {useNavigate} from "react-router-dom";
+
 
 const Home = () => {
-  return (
+    let navigate=useNavigate();
+
+    return (
 
     <div className=" h-screen w-screen flex flex-row items-end  lg:px-32 px-5 bg-[url('./assets/img/main.jpg')] bg-center bg-contain bg-no-repeat bg-black">
         <div className="fixed top-0 left-0">
@@ -19,7 +23,13 @@ const Home = () => {
         </div>
         </div>
         <div className=" lg:pl-44">
-          <Button title="Booking table" />
+            <a
+                className="hover:text-brightColor transition-all cursor-pointer"
+                onClick={()=>(navigate('/booking',{replace:true}))}
+            ><Button title="Booking table" />
+            </a>
+
+
         </div>
        </div>
 

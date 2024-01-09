@@ -1,11 +1,11 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useState} from "react";
-import {Link} from "react-router-dom";
 import {BiRestaurant} from "react-icons/bi";
 import Button from "../layouts/Button";
-import Login  from"./Login"
 import {AiOutlineMenuUnfold} from "react-icons/ai";
 import {AiOutlineClose} from "react-icons/ai";
+import {useNavigate} from "react-router-dom";
+
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
@@ -14,9 +14,9 @@ const Navbar = () => {
         setMenu(!menu);
     };
 
-    const closeMenu = () => {
-        setMenu(false);
-    };
+
+    let navigate=useNavigate();
+
 
     return (
         <div className="fixed w-screen  bg-black">
@@ -31,46 +31,34 @@ const Navbar = () => {
                     </div>
 
                     <nav
-                        className=" text-green hidden md:flex flex-row items-center text-lg font-medium gap-8 bg-black">
-                        <Link
-                            to="home"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
+                        className=" text-green hidden md:flex flex-row items-center text-lg font-medium gap-8 bg-black ">
+                        <a
                             className="hover:text-brightColor transition-all cursor-pointer"
+                            onClick={()=>(navigate('/home',{replace:true}))}
                         >
-                            Home
-                        </Link>
+                            Home</a>
 
-                        <Link
-                            to="about"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
+
+                        <a
                             className="hover:text-brightColor transition-all cursor-pointer"
+                            onClick={()=>(navigate('/about',{replace:true}))}
                         >
                             About
-                        </Link>
+                        </a>
 
-                        <Link
-                            to="menu"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
+                        <a
                             className="hover:text-brightColor transition-all cursor-pointer"
+                            onClick={()=>(navigate('/menu',{replace:true}))}
                         >
                             Menu
-                        </Link>
+                        </a>
 
 
-                        <Link
-                            to="login"
-                            spy={true}
-                            smooth={true}
-                            duration={500}
+                        <a
                             className="hover:text-brightColor transition-all cursor-pointer"
+                            onClick={()=>(navigate('/login',{replace:true}))}
                         ><Button title="Login" />
-                        </Link>
+                        </a>
                     </nav>
 
                     <div className="md:hidden flex items-center">
@@ -86,48 +74,32 @@ const Navbar = () => {
                         menu ? "translate-x-0" : "-translate-x-full"
                     } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
                 >
-                    <Link
-                        to="home"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
+                    <a
                         className="hover:text-brightColor transition-all cursor-pointer"
-                        onClick={closeMenu}
+                        onClick={()=>(navigate('/home',{replace:true}))}
                     >
                         Home
-                    </Link>
+                    </a>
 
-                    <Link
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
+                    <a
                         className="hover:text-brightColor transition-all cursor-pointer"
-                        onClick={closeMenu}
+                        onClick={()=>(navigate('/about',{replace:true}))}
                     >
                         About
-                    </Link>
-                    <Link
-                        to="menu"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
+                    </a>
+                    <a
                         className="hover:text-brightColor transition-all cursor-pointer"
-                        onClick={closeMenu}
+                        onClick={()=>(navigate('/menu',{replace:true}))}
                     >
                         Menu
-                    </Link>
+                    </a>
 
-                <Link
-                    to={Login}
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    className="hover:text-brightColor transition-all cursor-pointer"
-                    onClick={closeMenu}
-                >
+                    <a
+                        className="hover:text-brightColor transition-all cursor-pointer"
+                        onClick={()=>(navigate('/home',{replace:true}))}
+                    >
                     <Button title="Login" />
-                </Link>
+                </a>
 
                 </div>
             </div>

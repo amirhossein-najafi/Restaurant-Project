@@ -2,9 +2,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import {Link} from "react-router-dom";
+import menu from "./Menu.jsx";
+import {useNavigate} from "react-router-dom";
+
 
 const Login = () => {
+    let navigate=useNavigate();
+
     return (
         <div><Navbar/>
             <div className=" text-white h-[100vh] flex flex-col justify-center items-center bg-black pb-60">
@@ -22,26 +26,21 @@ const Login = () => {
                     </div>
                 </form>
                 <div className="flex flex-row gap-16 justify-center items-center w-screen pt-8">
-                <Link 
-                        to="menu"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
+                <a
+
                         >
                         <button className="w-96 px-8 py-1 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Log In
                         </button>
-                        </Link>
+                        </a>
                     
                     </div>
                     <div className="flex flex-row gap-16 justify-center items-center w-screen">
-                        <Link 
-                        to="Sign up"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
-                        className="text-brightColor underline pt-3">
+                        <a
+                            className="text-brightColor underline pt-3 cursor-pointer"
+                            onClick={()=>(navigate('/sign up',{replace:true}))}
+                        >
                         you do not have an account ? create one !
-                        </Link>
+                        </a>
                     </div>
             </div>
             <Footer />

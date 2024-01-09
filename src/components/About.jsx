@@ -3,6 +3,7 @@ import Navbar from "./Navbar.jsx";
 
 
 const About = () => {
+
   return (
 
     <div className="bg-black min-h-screengrid flex flex-row gap-x-80 lg:px-32 px-5 py-40">
