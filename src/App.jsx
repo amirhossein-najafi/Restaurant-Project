@@ -21,7 +21,7 @@ const App = () => {
         <div id="about">
           <About />
         </div>
-
+        
         <div id="menu">
           <Menu />
         </div>
