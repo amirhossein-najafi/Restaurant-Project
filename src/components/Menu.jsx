@@ -98,10 +98,13 @@ const Menu = () => {
   `,
     );
     return (
-        <div className="bg-black min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
+        <div className="bg-black min-h-screen flex flex-col justify-center items-center lg:px-32 px-5 py-20">
+            <div className="fixed top-0 left-0">
+            <Navbar />
+        </div>
 
-            <div>
-        <span className="text-brightColor text-3xl font-semibold text-center lg:pt-8 pt-24 pb-40">
+        <div className="w-screen flex flex-col justify-center">
+        <span className="text-brightColor text-3xl font-semibold text-center lg:pt-8 pt-3 pb-10">
         FOOD MENU</span>
 
             </div>
