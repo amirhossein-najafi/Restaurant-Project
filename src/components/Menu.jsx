@@ -96,7 +96,7 @@ const Menu = () => {
         <div className="w-screen flex flex-col justify-center">
         <span className="text-brightColor text-3xl font-semibold text-center lg:pt-8 pt-3 pb-10">
         FOOD MENU</span>
-
+        
             </div>
             <div className="bg-transparent flex flex-row gap-16 justify-center items-center">
 
