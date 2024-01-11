@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import DishesCard from "../layouts/DishesCard";
 import menu1 from "../assets/img/menu1.jpg";
@@ -24,19 +25,6 @@ const Menu = () => {
         700: '#F26415',
         800: '#ed5c0b',
         900: '#f15700',
-    };
-
-    const grey = {
-        50: '#F3F6F9',
-        100: '#E5EAF2',
-        200: '#DAE2ED',
-        300: '#C7D0DD',
-        400: '#B0B8C4',
-        500: '#9DA8B7',
-        600: '#6B7A90',
-        700: '#434D5B',
-        800: '#303740',
-        900: '#1C2025',
     };
 
     const Tab = styled(BaseTab)`
@@ -74,6 +62,7 @@ const Menu = () => {
     `;
 
     const TabPanel = styled(BaseTabPanel)(
+        // eslint-disable-next-line no-unused-vars
         ({theme}) => `
   width: 100%;
   font-size: 0.875rem;
@@ -86,6 +75,7 @@ const Menu = () => {
     );
 
     const TabsList = styled(BaseTabsList)(
+        // eslint-disable-next-line no-unused-vars
         ({theme}) => `
   min-width: 400px;
   background-color: ${orange[600]};
