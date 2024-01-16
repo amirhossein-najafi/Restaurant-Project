@@ -8,6 +8,7 @@ import Menu from "./components/Menu";
 import Login from "./components/Login";
 import Sign from "./components/Signup";
 import Booking from "./components/booking";
+import Admin from "./components/Admin.jsx";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path='/login' element={<Login/>}></Route>
               <Route path='/sign up' element={<Sign/>}></Route>
               <Route path='/booking' element={<Booking/>}></Route>
+              <Route path='/paneladmin' element={<Admin/>}></Route>
 
 
           </Routes>

@@ -28,7 +28,8 @@ const Login = () => {
                 <a
 
                         >
-                        <button className="w-96 px-8 py-1 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Log In
+                        <button  onClick={()=>(navigate('/paneladmin',{replace:true}))}
+                                 className="w-96 px-8 py-1 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Log In
                         </button>
                         </a>
                     

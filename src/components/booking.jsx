@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import {useNavigate} from "react-router-dom";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 
@@ -55,6 +54,7 @@ const booking = () => {
                             <p className="text-brightColor font-semibold w-40">Number of <br /> persons : </p>
                               <select  onChange={(e) => {handleChange(e)}} className="w-96 h-10 rounded-2xl p-3">
                                {options.map((option) => (
+                                   // eslint-disable-next-line react/jsx-key
                                <option value={option.value} className="pl-3" >{option.label}</option>
                                ))}
                                 </select>
