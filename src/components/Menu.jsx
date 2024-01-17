@@ -113,23 +113,23 @@ const Menu = () => {
 
                     <TabPanel className="w-screen h-screen  text-sm" value={1}>
                         <div className="text-whiteColor flex flex-wrap gap-8 justify-between">
-                            <DishesCard img={menu1} title="Delicious Dish" price="$9.99"/>
-                            <DishesCard img={menu2} title="Delicious Dish" price="$10.89"/>
-                            <DishesCard img={menu3} title="Delicious Dish" price="$13.09"/>
-                            <DishesCard img={menu1} title="Delicious Dish" price="$11.61"/>
-                            <DishesCard img={menu2} title="Delicious Dish" price="$8.20"/>
-                            <DishesCard img={menu3} title="Delicious Dish" price="$14.57"/>
+                            <DishesCard img={menu1} title="ceaser salad" price="$9.99"/>
+                            <DishesCard img={menu2} title="ceaser salad" price="$10.89"/>
+                            <DishesCard img={menu3} title="ceaser salad" price="$13.09"/>
+                            <DishesCard img={menu1} title="ceaser salad" price="$11.61"/>
+                            <DishesCard img={menu2} title="ceaser salad" price="$8.20"/>
+                            <DishesCard img={menu3} title="ceaser salad" price="$14.57"/>
 
                         </div>
                     </TabPanel>
                     <TabPanel className="w-full  text-sm" value={2}>
                         <div className="text-whiteColor flex flex-wrap gap-8 justify-between">
-                            <DishesCard img={menu1} title="Delicious Dish" price="$16.99"/>
-                            <DishesCard img={menu2} title="Delicious Dish" price="$18.99"/>
-                            <DishesCard img={menu3} title="Delicious Dish" price="$14.99"/>
-                            <DishesCard img={menu1} title="Delicious Dish" price="$16.99"/>
-                            <DishesCard img={menu2} title="Delicious Dish" price="$18.99"/>
-                            <DishesCard img={menu3} title="Delicious Dish" price="$14.99"/>
+                            <DishesCard img={menu1} title="chicken burger" price="$16.99"/>
+                            <DishesCard img={menu2} title="chicken burger" price="$18.99"/>
+                            <DishesCard img={menu3} title="chicken burger" price="$14.99"/>
+                            <DishesCard img={menu1} title="chicken burger" price="$16.99"/>
+                            <DishesCard img={menu2} title="chicken burger" price="$18.99"/>
+                            <DishesCard img={menu3} title="chicken burger" price="$14.99"/>
                         </div>
                     </TabPanel>
                     <TabPanel className="w-full  text-sm" value={3}>

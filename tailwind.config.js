@@ -12,7 +12,8 @@ export default {
         lightText: "#959595",
         footerColor:"#8A4924",
         menutext:"#C7DD8B",
-        logintext:"#393e3e"
+        logintext:"#393e3e",
+        panelGreen:"#515D2E"
       },
     },
   },

@@ -8,8 +8,12 @@ import Menu from "./components/Menu";
 import Login from "./components/Login";
 import Sign from "./components/Signup";
 import Booking from "./components/booking";
-import Admin from "./components/Admin.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
+import Edit from "./pages/Edit.jsx";
+import AddProducts from "./pages/Addproducts.jsx";
+import Orders from "./pages/Orders.jsx";
+import Customers from "./pages/Customers.jsx";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -22,7 +26,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path='/login' element={<Login/>}></Route>
               <Route path='/sign up' element={<Sign/>}></Route>
               <Route path='/booking' element={<Booking/>}></Route>
-              <Route path='/paneladmin' element={<Admin/>}></Route>
+              <Route path='/dashboard' element={<Dashboard/>}></Route>
+              <Route path='/editmenu' element={<Edit/>}></Route>
+              <Route path='/AddProducts' element={<AddProducts/>}></Route>
+              <Route path='/orders' element={<Orders/>}></Route>
+              <Route path='/customers' element={<Customers/>}></Route>
 
 
           </Routes>
