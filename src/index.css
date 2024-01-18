@@ -7,10 +7,7 @@
 body {
   font-family: 'Aclonica', sans-serif;
 }
-form {
+form ,tr,.add {
   font-family: 'Adamina', serif;
 }
-tr{
-  font-family: 'Adamina', serif;
 
-}

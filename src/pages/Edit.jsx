@@ -27,6 +27,7 @@ function Edit() {
                             <th className="border-b-[1px] border-b-black">Name</th>
                             <th className="border-b-[1px] border-b-black">Details</th>
                             <th className="border-b-[1px] border-b-black">category</th>
+                            <th className="border-b-[1px] border-b-black"></th>
                         </tr>
                         {data.map((val, key) => {
                             return (
@@ -35,7 +36,7 @@ function Edit() {
                                     <td className="pl-4 border-b-[1px] border-b-black">{val.Name}</td>
                                     <td className="pl-4 border-b-[1px] border-b-black">{val.Details}</td>
                                     <td className="pl-4 border-b-[1px] border-b-black">{val.category}</td>
-                                    <td className="pl-4 ">
+                                    <td className="pl-4 border-b-[1px] border-b-black">
                                         <input    type="checkbox" value=""
                                                   className="border-footerColor accent-black  w-4 h-4 cursor-pointer rounded-[5px] "/>
                                     </td>
