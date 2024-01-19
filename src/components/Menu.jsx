@@ -4,6 +4,7 @@ import DishesCard from "../layouts/DishesCard";
 import menu1 from "../assets/img/menu1.jpg";
 import menu2 from "../assets/img/menu2.jpg";
 import menu3 from "../assets/img/menu3.jpg";
+import menu4 from "../assets/img/about-4.jpg";
 import {styled} from '@mui/system';
 import {Tabs} from '@mui/base/Tabs';
 import {TabsList as BaseTabsList} from '@mui/base/TabsList';
