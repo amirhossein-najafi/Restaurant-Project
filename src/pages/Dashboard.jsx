@@ -13,6 +13,13 @@ function Dashboard() {
         { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" },
         { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" },
         { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" },
+        { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" },
+        { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" },
+        { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" },
+        { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" },
+        { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" },
+        { FoodItem: "CHICKEN BURGER", price: "115$", FoodID: "123rty" }
+        
     ]
     const data2 = [
         { Month: "June", Revenue: "500$" },
@@ -49,11 +56,14 @@ function Dashboard() {
             <div className=" w-screen flex flex-row justify-evenly ">
                 <div className="mt-16">
                     <table  className="rounded-[20px] text-black bg-[#8D684D] w-[472px] h-[551px]">
-                        <div className= "flex flex-row justify-around  rounded-t-[20px] bg-[#8D684D] border-b-[1px] border-b-black mt-6 ml-4 text-1xl">
-                            RECENT ORDERS REQUESTED <button className="w-40 px-8 py-1 border-2  bg-brightColor border-brightColor text-black  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor"> view all</button></div>
+                        <div className= "w-[472px] flex flex-row justify-between gap-x-120 rounded-t-[20px] bg-[#8D684D] k mt-8  ml-4 text-1xl">
+                            <p>RECENT ORDERS REQUESTED </p>
+                            <button className="w-40 px-8 py-1 border-2  bg-brightColor border-brightColor text-black  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor"> view all</button>
+                            </div>
+                            <div style={{ borderTop: "2px solid #000 ",width : 200 }}></div>
                         <tr>
 
-                            <th className="border-b-[1px] border-b-black">FoodItem</th>
+                            <th className="border-b-[1px] border-b-black pr-80">FoodItem</th>
                             <th className="border-b-[1px] border-b-black">Price</th>
                             <th className="border-b-[1px] border-b-black">FoodID</th>
                         </tr>
