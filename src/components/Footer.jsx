@@ -5,10 +5,10 @@ import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white  mt-8 md:mt-0">
-      <div className="flex flex-col md:flex-row justify-around justify-items-start p-8 md:px-32 px-5">
+    <div className="bg-black text-white  mt-8 sm:mt-0">
+      <div className="flex flex-col sm:flex-row justify-around justify-items-start p-8 sm:px-32 px-5">
         <div>
-          <h1 className="text-brightColor font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
+          <h1 className="text-brightColor font-medium text-xl pb-4 pt-5 sm:pt-0">Contact Us</h1>
           <nav className="text-footerColor flex flex-col gap-2">
             <a
                 className=" hover:text-brightColor transition-all cursor-pointer"
@@ -31,7 +31,7 @@ const Footer = () => {
           </nav>
         </div>
         <div>
-          <h1 className="text-brightColor font-medium text-xl pb-4 pt-5 md:pt-0">Opening</h1>
+          <h1 className="text-brightColor font-medium text-xl pb-4 pt-5 sm:pt-0">Opening</h1>
           <nav className="text-footerColor flex flex-col gap-2">
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"

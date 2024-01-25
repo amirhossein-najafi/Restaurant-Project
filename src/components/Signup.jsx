@@ -16,7 +16,7 @@ const Signup = () => {
             </div>
         <div className="pb-40">
             <form className="w-full" action="">
-                    <div className="text-logintext grid grid-cols-2 gap-x-40 gap-y-5 justify-center items-center outline-0">
+                    <div className="text-logintext grid grid-cols-1 lg:grid-cols-2 gap-x-40 gap-y-5 justify-center items-center outline-0">
                         <div className="flex flex-row items-center">
                             <p className="text-brightColor font-semibold w-40">User name : </p>
                             <input className="rounded-2xl w-96 h-10 p-3" type="text" placeholder="Username "/>
@@ -44,7 +44,7 @@ const Signup = () => {
                     </div>
                 </form>
                 <div className="flex flex-row justify-center items-center pt-20">
-                    <button className="w-96 px-8 py-1 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Create
+                    <button className=" w-80  h-8 sm:w-96 sm:h-10 sm:p-3 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Create
                         </button>
                 </div>
 

@@ -4,7 +4,6 @@ import DishesCard from "../layouts/DishesCard";
 import menu1 from "../assets/img/menu1.jpg";
 import menu2 from "../assets/img/menu2.jpg";
 import menu3 from "../assets/img/menu3.jpg";
-import menu4 from "../assets/img/about-4.jpg";
 import {styled} from '@mui/system';
 import {Tabs} from '@mui/base/Tabs';
 import {TabsList as BaseTabsList} from '@mui/base/TabsList';
@@ -78,7 +77,7 @@ const Menu = () => {
     const TabsList = styled(BaseTabsList)(
         // eslint-disable-next-line no-unused-vars
         ({theme}) => `
-  min-width: 400px;
+  min-width: 350px;
   background-color: ${orange[600]};
   border-radius: 12px;
   margin-bottom: 16px;
@@ -89,21 +88,21 @@ const Menu = () => {
   `,
     );
     return (
-        <div className="bg-black min-h-screen flex flex-col justify-center items-center lg:px-32 px-5 py-20">
+        <div className="bg-black  flex flex-col justify-center items-center sm:px-32 px-5 py-20">
             <div className="fixed top-0 left-0">
             <Navbar />
         </div>
 
-        <div className="w-screen flex flex-col justify-center">
-        <span className="text-brightColor text-3xl font-semibold text-center lg:pt-8 pt-3 pb-10">
+        <div className="w-screen flex flex-col sm:flex-col justify-center">
+        <span className="text-brightColor text-xl sm:text-3xl font-semibold text-center sm:pt-8 pt-3 pb-10">
         FOOD MENU</span>
         
             </div>
-            <div className="bg-transparent flex flex-row gap-16 justify-center items-center">
+            <div className="flex sm:flex-row gap-16 justify-center items-center">
 
                 <Tabs defaultValue={1}>
                     <div className="flex flex-row gap-16 justify-center items-center">
-                        <TabsList>
+                        <TabsList >
                             <Tab value={1}>
                                 Salad
                             </Tab>
@@ -125,28 +124,28 @@ const Menu = () => {
                     </TabPanel>
                     <TabPanel className="w-full  text-sm" value={2}>
                         <div className="text-whiteColor flex flex-wrap gap-8 justify-between">
-                            <DishesCard img={menu1} title="chicken burger" price="$16.99"/>
+                            <DishesCard img={menu3} title="chicken burger" price="$16.99"/>
+                            <DishesCard img={menu1} title="chicken burger" price="$18.99"/>
+                            <DishesCard img={menu2} title="chicken burger" price="$14.99"/>
+                            <DishesCard img={menu3} title="chicken burger" price="$16.99"/>
                             <DishesCard img={menu2} title="chicken burger" price="$18.99"/>
-                            <DishesCard img={menu3} title="chicken burger" price="$14.99"/>
-                            <DishesCard img={menu1} title="chicken burger" price="$16.99"/>
-                            <DishesCard img={menu2} title="chicken burger" price="$18.99"/>
-                            <DishesCard img={menu3} title="chicken burger" price="$14.99"/>
+                            <DishesCard img={menu1} title="chicken burger" price="$14.99"/>
                         </div>
                     </TabPanel>
                     <TabPanel className="w-full  text-sm" value={3}>
                         <div className="text-whiteColor flex flex-wrap gap-8 justify-between">
-                            <DishesCard img={menu1} title="Delicious Dish" price="$16.99"/>
-                            <DishesCard img={menu2} title="Delicious Dish" price="$21.99"/>
-                            <DishesCard img={menu3} title="Delicious Dish" price="$120.99"/>
-                            <DishesCard img={menu1} title="Delicious Dish" price="$11.99"/>
-                            <DishesCard img={menu2} title="Delicious Dish" price="$12.99"/>
-                            <DishesCard img={menu3} title="Delicious Dish" price="$13.99"/>
+                            <DishesCard img={menu2} title="Cocka" price="$16.99"/>
+                            <DishesCard img={menu3} title="Yoghurt" price="$21.99"/>
+                            <DishesCard img={menu1} title="lemonade" price="$120.99"/>
+                            <DishesCard img={menu2} title="Water" price="$11.99"/>
+                            <DishesCard img={menu3} title="Cooffe" price="$12.99"/>
+                            <DishesCard img={menu1} title="" price="$13.99"/>
                         </div>
                     </TabPanel>
                 </Tabs>
             </div>
 
-            <div className="flex flex-row gap-16 justify-center items-center"><Button title="confirm and pay"/></div>
+            <div className="flex flex-col sm:flex-row gap-16 justify-center items-center"><Button title="confirm and pay"/></div>
 
         </div>
     );

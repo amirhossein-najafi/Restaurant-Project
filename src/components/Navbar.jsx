@@ -22,16 +22,16 @@ const Navbar = () => {
         <div className="fixed w-screen  bg-black">
             <div>
                 <div
-                    className=" bg-black flex flex-row justify-between p-5 md:px-20  shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-                    <div className=" flex flex-row items-center cursor-pointer">
+                    className=" bg-black flex flex-row sm:flex-row  justify-between  p-2 sm:p-5 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    <div className=" flex flex-row sm:flex-row items-center cursor-pointer">
             <span>
-              <BiRestaurant size={32} color="#10D352"/>
+              <BiRestaurant size={20} color="#10D352"/>
             </span>
-                        <h1 className="text-brightColor text-xl font-semibold">Restourant</h1>
+                        <h1 className=" text-brightColor text-[11px] mr-3  sm:text-xl font-semibold">Restourant</h1>
                     </div>
 
                     <nav
-                        className=" text-green hidden md:flex flex-row items-center text-lg font-medium gap-8 bg-black ">
+                        className="text-green  flex flex-row sm:flex-row gap-3 items-center text-[10px] sm:text-lg font-medium sm:gap-8 bg-black ">
                         <a
                             className="hover:text-brightColor transition-all cursor-pointer"
                             onClick={()=>(navigate('/home',{replace:true}))}

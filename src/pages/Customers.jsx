@@ -1,5 +1,7 @@
 import React from 'react';
 import AdminNavbar from "../components/AdminNavbar.jsx";
+import * as  HiPencil from "react-icons/hi2";
+import * as FaTrashAlt  from "react-icons/fa";
 
 function Customers() {
     const data = [
@@ -22,12 +24,12 @@ function Customers() {
 
             <div className="w-screen flex flex-col justify-center">
         <span className="text-brightColor text-3xl font-semibold text-center lg:pt-8 pt-3 pb-10">
-        Customer</span>
+        Orders List</span>
             </div>
             <div className="mt-16">
                 <table  className="rounded-[20px] text-black bg-[#8D684D] w-[75rem] h-[600px]">
 
-                   <tr>
+                    <tr>
                         <th className="border-b-[1px] border-b-black">OrderID</th>
                         <th className="border-b-[1px] border-b-black">FoodID</th>
                         <th className="border-b-[1px] border-b-black">CustomerID</th>
@@ -46,12 +48,15 @@ function Customers() {
                                 <td className="pl-14 border-b-[1px] border-b-black">{val.OrderItem}</td>
                                 <td className="pl-14 border-b-[1px] border-b-black">{val.Bill}</td>
                                 <td className="pl-14 border-b-[1px] border-b-black">
-                                    <FaIcons.FaCheck color="#10D352" className="check , cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"/></td>
+                                    <HiPencil.HiPencil color="#000000" className="check , cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"/>
+                                    <FaTrashAlt.FaTrashAlt color="#000000" className="check , cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"/></td>
                             </tr>
                         )
                     })}
                 </table>
             </div>
+
+
         </div>
     );
 }
