@@ -98,7 +98,7 @@ const Menu = () => {
         FOOD MENU</span>
         
             </div>
-            <div className="flex sm:flex-row gap-16 justify-center items-center">
+            <div className="flex flex-row gap-16 justify-center items-center">
 
                 <Tabs defaultValue={1}>
                     <div className="flex flex-row gap-16 justify-center items-center">
@@ -111,7 +111,7 @@ const Menu = () => {
                         </TabsList>
                     </div>
 
-                    <TabPanel className="w-screen h-screen  text-sm" value={1}>
+                    <TabPanel className="sm:w-screen sm:h-screen  text-sm" value={1}>
                         <div className="text-whiteColor flex flex-wrap gap-8 justify-between">
                             <DishesCard img={menu1} title="ceaser salad" price="$9.99"/>
                             <DishesCard img={menu2} title="ceaser salad" price="$10.89"/>
@@ -122,7 +122,7 @@ const Menu = () => {
 
                         </div>
                     </TabPanel>
-                    <TabPanel className="w-full  text-sm" value={2}>
+                    <TabPanel className="sm:w-screen sm:h-screen    text-sm" value={2}>
                         <div className="text-whiteColor flex flex-wrap gap-8 justify-between">
                             <DishesCard img={menu3} title="chicken burger" price="$16.99"/>
                             <DishesCard img={menu1} title="chicken burger" price="$18.99"/>
@@ -132,7 +132,7 @@ const Menu = () => {
                             <DishesCard img={menu1} title="chicken burger" price="$14.99"/>
                         </div>
                     </TabPanel>
-                    <TabPanel className="w-full  text-sm" value={3}>
+                    <TabPanel className="sm:w-full sm:h-screen  text-sm" value={3}>
                         <div className="text-whiteColor flex flex-wrap gap-8 justify-between">
                             <DishesCard img={menu2} title="Cocka" price="$16.99"/>
                             <DishesCard img={menu3} title="Yoghurt" price="$21.99"/>
@@ -145,7 +145,7 @@ const Menu = () => {
                 </Tabs>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-16 justify-center items-center"><Button title="confirm and pay"/></div>
+            <div className="flex flex-col gap-16 justify-center items-center"><Button title="confirm and pay"/></div>
 
         </div>
     );

@@ -5,8 +5,8 @@ import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-black text-white  mt-8 sm:mt-0">
-      <div className="flex flex-col sm:flex-row justify-around justify-items-start p-8 sm:px-32 px-5">
+    <div className="bg-black md:h-full text-white ">
+      <div className="bg-black flex flex-col sm:flex-row justify-around justify-items-start p-8 sm:px-32 px-5">
         <div>
           <h1 className="text-brightColor font-medium text-xl pb-4 pt-5 sm:pt-0">Contact Us</h1>
           <nav className="text-footerColor flex flex-col gap-2">
