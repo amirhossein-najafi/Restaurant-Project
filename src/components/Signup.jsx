@@ -3,9 +3,12 @@ import React from "react";
 import {useNavigate} from "react-router-dom";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
+import login from "./Login.jsx";
 
 
 const Signup = () => {
+    let navigate=useNavigate();
+
 
     return (
         <div><Navbar/>
@@ -43,10 +46,13 @@ const Signup = () => {
                         </div> 
                     </div>
                 </form>
-                <div className="flex flex-row justify-center items-center pt-20">
-                    <button className=" w-80  h-8 sm:w-96 sm:h-10 sm:p-3 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Create
-                        </button>
-                </div>
+            <a className="flex flex-row justify-center items-center pt-20" onClick={() => {alert('account created successfully');}}
+
+            >
+                <button  onClick={()=>(navigate('/login',{replace:true}))}
+                         className=" w-80  h-8 sm:w-96 sm:h-10 sm:p-3 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Create
+                </button>
+            </a>
 
         </div>
 

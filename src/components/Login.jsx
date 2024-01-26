@@ -25,7 +25,7 @@ const Login = () => {
                     </div>
                 </form>
                 <div className="flex flex-col sm:flex-row gap-16 justify-center items-center w-screen pt-8">
-                <a
+                <a onClick={() => {alert('login successfully');}}
 
                         >
                         <button  onClick={()=>(navigate('/dashboard',{replace:true}))}

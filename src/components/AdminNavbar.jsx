@@ -29,11 +29,11 @@ const AdminNavbar = () => {
         <div className="fixed w-screen  bg-black">
             <div>
                 <div
-                    className=" bg-black flex flex-row justify-between p-5 md:px-20  shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                    className=" bg-black flex flex-row justify-between p-5    shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
                     <div className=" flex flex-row items-center cursor-pointer">
                             <div className='flex bg-black justify-start items-start'>
                                 <Link to='#' className=' text-[2rem] bg-none text-brightColor'>
-                                    <FaIcons.FaBars  onClick={showSidebar} />
+                                    <FaIcons.FaBars className="w-5 sm:w-10"  onClick={showSidebar} />
                                 </Link>
                             </div>
                             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
@@ -58,13 +58,13 @@ const AdminNavbar = () => {
 
 
                         <span>
-              <BiRestaurant size={32} color="#10D352"/>
+              <BiRestaurant size={20} color="#10D352"/>
             </span>
-                        <h1 className="text-brightColor text-xl font-semibold">Restourant</h1>
+                        <h1 className=" text-brightColor text-[11px] mr-3  sm:text-xl font-semibold">Restourant</h1>
                     </div>
 
                     <nav
-                        className=" text-green hidden md:flex flex-row items-center text-lg font-medium gap-8 bg-black ">
+                        className="text-green  flex flex-row sm:flex-row gap-3 items-center text-[12px] sm:text-lg font-medium sm:gap-8 bg-black ">
                         <a
                             className="hover:text-brightColor transition-all cursor-pointer"
                             onClick={()=>(navigate('/home',{replace:true}))}
@@ -90,7 +90,7 @@ const AdminNavbar = () => {
                         <a
                             className="hover:text-brightColor transition-all cursor-pointer"
                             onClick={()=>(navigate('/login',{replace:true}))}
-                        > <Button title="Log out" />
+                        ><Button title="Logout" />
                         </a>
                     </nav>
 
@@ -129,9 +129,9 @@ const AdminNavbar = () => {
 
                     <a
                         className="hover:text-brightColor transition-all cursor-pointer"
-                        onClick={()=>(navigate('/login',{replace:true}))}
+                        onClick={()=>(navigate('/home',{replace:true}))}
                     >
-                        <Button title="Log out" />
+                        <Button title="Logout" />
                     </a>
 
                 </div>
