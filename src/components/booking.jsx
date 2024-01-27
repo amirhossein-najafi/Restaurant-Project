@@ -1,12 +1,12 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import  React from "react";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
-import Alert from '@mui/material/Alert';
-import CheckIcon from '@mui/icons-material/Check';
-import {alertClasses} from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 const booking = () => {
+    let navigate=useNavigate();
+
 
     const options = [
         {
@@ -62,8 +62,8 @@ const booking = () => {
                         </div>
                     </div>
                 </form>
-                <div className="flex flex-row justify-center items-center pt-20">
-                    <button onClick={alert('aaaa')}  className=" w-80  h-8 lg:w-96 lg:h-10 lg:p-3 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Book
+                <div onClick={() => {alert('table reserved successfully');}} className="flex flex-row justify-center items-center pt-20">
+                    <button onClick={()=>(navigate('/home',{replace:true}))}  className=" w-80  h-8 lg:w-96 lg:h-10 lg:p-3 border-2  bg-black border-brightColor text-brightColor  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 rounded-full hover:bg-brightColor hover:text-blackColor">Book
                         </button>
 
                 </div>

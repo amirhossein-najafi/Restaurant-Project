@@ -27,7 +27,7 @@ function Addproducts() {
                 <div className="fixed top-0 left-0">
                     <AdminNavbar/>
                 </div>
-                <div className="lg:w-[45rem] lg:h-[50rem] md:w-[35rem] md:h-[40rem]  w-[20rem] h-[60rem] bg-[#8D684D] min-h-screen   rounded-[20px] pl-24 pt-12 pb-24 pr-24">
+                <div className="lg:w-[45rem] lg:h-[50rem] md:w-[35rem] md:h-[40rem]  w-[20rem] h-[60rem] bg-[#8D684D] min-h-screen   rounded-[20px] pl-12 md:pl-24 pt-12 pb-24 pr-24">
                     <div className="flex flex-row justify-center sm:text-md  hover:text-brightColor font-extrabold">
                         ADD PRODUCT FORM
                     </div>
@@ -63,9 +63,9 @@ function Addproducts() {
 
                         </div>
                     </div>
-                    <div className="lg:w-[37rem] md:w-[25rem] w-[19rem] flex justify-end gap-5 lg:mt-12 md:mt-36 mt-[4rem] ">
-                        <button className="px-8 py-1 border-2  bg-brightColor border-brightColor text-black  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300  ">Save</button>
-                        <button className="px-8 py-1 border-2  bg-brightColor border-brightColor text-black  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300  ">Save and Add</button>
+                    <div className="lg:w-[37rem] md:w-[25rem] w-[14rem] h-10  flex justify-end gap-5 lg:mt-12 md:mt-36 mt-[10rem] ">
+                        <button className="text-[10px] md:text-md px-6 py-0.5 border-2  bg-brightColor border-brightColor text-black  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300  ">Save</button>
+                        <button className="text-[10px] md:text-md px-8 py-1 border-2  bg-brightColor border-brightColor text-black  transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300  ">Save and Add</button>
 
                     </div>
 
