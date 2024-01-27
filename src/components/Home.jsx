@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+// eslint-disable-next-line no-unused-vars
+import React from "react";
 import Button from "../layouts/Button";
 import Navbar from "./Navbar.jsx";
 import {useNavigate} from "react-router-dom";
-
+import menu3 from "../assets/img/menu3.jpg";
 
 const Home = () => {
     let navigate=useNavigate();

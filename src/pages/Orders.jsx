@@ -44,12 +44,12 @@ const data = [
                     {data.map((val, key) => {
                         return (
                             <tr key={key}>
-                                <td className="text-[10px] lg:text-xl lg:pl-14 pl-2  border-b-[1px] border-b-black">{val.OrderID}</td>
-                                <td className="text-[10px] lg:txet-xl lg:pl-14 pl-2 border-b-[1px] border-b-black">{val.FoodID}</td>
-                                <td className="text-[10px] lg:txet-xl lg:pl-14 pl-2 border-b-[1px] border-b-black">{val.CustomerID}</td>
-                                <td className="text-[10px] lg:txet-xl lg:pl-14 pl-2 border-b-[1px] border-b-black">{val.Customer_Name}</td>
-                                <td className="text-[10px] lg:txet-xl lg:pl-14 pl-2 border-b-[1px] border-b-black">{val.Deliver_Time}</td>
-                                <td className="text-[10px] lg:txet-xl lg:pl-14 pl-2 border-b-[1px] border-b-black">{val.Price}</td>
+                                <td className="text-[10px] lg:text-xl  lg:pl-14 md:pl-8 pl-8  border-b-[1px] border-b-black">{val.OrderID}</td>
+                                <td className="text-[10px] lg:txet-xl lg:pl-14 md:pl-8  border-b-[1px] border-b-black">{val.FoodID}</td>
+                                <td className="text-[10px] lg:txet-xl lg:pl-14 md:pl-8 pl-8 border-b-[1px] border-b-black">{val.CustomerID}</td>
+                                <td className="text-[10px] lg:txet-xl lg:pl-14 md:pl-8 pl-8 border-b-[1px] border-b-black">{val.Customer_Name}</td>
+                                <td className="text-[10px] lg:txet-xl lg:pl-14 md:pl-8 pl-8 border-b-[1px] border-b-black">{val.Deliver_Time}</td>
+                                <td className="text-[10px] lg:txet-xl lg:pl-14 md:pl-8 pl-8 border-b-[1px] border-b-black">{val.Price}</td>
                                 <td className="text-[10px] lg:txet-xl lg:pl-14 pl-6  border-b-[1px] border-b-black">
                                     <FaIcons.FaCheck color="#10D352" className="check , cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"/></td>
                             </tr>
